@@ -70,64 +70,39 @@ The dataset contains **4,000 agricultural records** with **28 attributes** cover
 
 ---
 
-## 🔍 Analysis Performed
+## ▶️ How to Run the Project
 
-### 1. Data Cleaning
-- Checked missing values
-- Handled missing numerical values
-- Checked duplicate records
-- Prepared the dataset for analysis
+### 1. Clone the repository
 
-### 2. Exploratory Data Analysis
-- Examined seasonal distributions
-- Studied crop and irrigation patterns
-- Compared agricultural performance across categories
+```bash
+git clone https://github.com/AswiniKumar55/-Seasonal-Agriculture-Performance-Analysis-.git
+cd -Seasonal-Agriculture-Performance-Analysis-
+```
 
-### 3. Statistical Analysis
-- Calculated descriptive statistics
-- Compared seasonal averages
-- Examined relationships between agricultural variables
-- Analyzed correlations between important numerical features
+### 2. Install the required libraries
 
-### 4. Data Visualization
+```bash
+pip install pandas numpy matplotlib seaborn scipy jupyter
+```
 
-Important visualizations include:
+### 3. Open the Jupyter Notebook
 
-- Average Yield by Season
-- Average Profit by Season
-- Environmental Conditions Across Seasons
-- Average Yield by Irrigation Method
-- Average Profit by Crop
-- Correlation Heatmap
-- Profit Distribution by Season
+```bash
+jupyter notebook
+```
 
----
+Or open the notebook directly in **Google Colab**.
 
-## 📈 Key Insights
+### 4. Load the dataset
 
-The analysis shows that agricultural performance varies across seasons and farming conditions.
+Make sure the dataset is in the same directory as the notebook, then use:
 
-- **Kharif** records the highest average yield among the three seasons.
-- **Kharif** also shows stronger average profitability compared with Rabi and Zaid.
-- Environmental conditions such as rainfall and soil moisture vary considerably between seasons.
-- **Drip irrigation** shows the highest average yield among the irrigation methods analyzed.
-- Crop profitability differs substantially, with some crops performing significantly better economically than others.
-- Yield and production show a strong positive relationship, while profit is strongly associated with revenue.
+```python
+import pandas as pd
 
-These observations describe relationships within the dataset and should not be interpreted as proof of direct causation.
+df = pd.read_csv("seasonal_agriculture_performance_dataset(1).csv")
+```
 
----
+### 5. Run the analysis
 
-## 📂 Project Structure
-
-```text
-Seasonal-Agriculture-Performance-Analysis/
-│
-├── data/
-│   └── seasonal_agriculture_performance_dataset.csv
-│
-├── notebooks/
-│   └── Seasonal_Agriculture_Performance_Analysis.ipynb
-│
-├── README.md
-└── requirements.txt
+Open the project notebook and **run all cells in sequence** to perform data cleaning, statistical analysis, visualizations, and generate the final results.
